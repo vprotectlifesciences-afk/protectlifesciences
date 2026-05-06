@@ -1,0 +1,339 @@
+PROTECT LIFE SCIENCES – FULL WEBSITE DEVELOPMENT PLAN
+
+---
+
+1. PROJECT OVERVIEW
+
+---
+
+Goal:
+Build a professional B2B pharmaceutical website for Protect Life Sciences.
+
+Core Focus:
+
+* Third-party manufacturing (main USP)
+* Export business (Africa + global)
+* Product showcase (antibiotics, injections)
+* Lead generation (contact form + email)
+
+Tech Stack:
+
+* Frontend: React + Vite + TypeScript + Tailwind CSS
+* Routing: React Router
+* Form Handling: EmailJS (initial)
+* Deployment: Vercel
+* Domain: GoDaddy (protectlifesciences.in)
+
+---
+
+2. WEBSITE STRUCTURE (PAGES)
+
+---
+
+1. Home
+2. About Us
+3. Products
+4. Third-Party Manufacturing (IMPORTANT)
+5. Exports / Global Reach
+6. Quality & Certifications
+7. Blog / Updates
+8. Contact
+
+---
+
+3. FOLDER STRUCTURE
+
+---
+
+src/
+├── assets/ (images, icons)
+├── components/
+│     Navbar.tsx
+│     Footer.tsx
+│     ProductCard.tsx
+│     CountryFlags.tsx
+│
+├── pages/
+│     Home.tsx
+│     About.tsx
+│     Products.tsx
+│     Manufacturing.tsx
+│     Exports.tsx
+│     Quality.tsx
+│     Blog.tsx
+│     Contact.tsx
+│
+├── layouts/
+├── App.tsx
+└── main.tsx
+
+---
+
+4. NAVBAR DESIGN
+
+---
+
+* Fixed top navigation
+
+* Logo (Protect Life Sciences)
+
+* Menu:
+  Home | About | Products | Manufacturing | Exports | Quality | Blog | Contact
+
+* Mobile responsive very important.
+
+---
+
+5. HOME PAGE STRUCTURE
+
+---
+
+Sections:
+
+1. Hero Section
+
+   * Background: Pharma plant / lab image
+   * Heading: "Protecting Lives Through Quality Pharmaceuticals"
+   * Buttons:
+
+     * Explore Products
+     * Partner With Us
+
+2. About Preview
+
+   * Short company intro
+
+3. Products Preview
+
+   * Categories:
+
+     * Antibiotics
+     * Critical Care
+     * Injections
+
+4. Third-Party Manufacturing Highlight ⭐
+
+   * Strong CTA
+   * "Your Trusted Manufacturing Partner"
+
+5. Export Countries Section 🌍
+   Countries:
+   Somalia, Namibia, Angola, Senegal, UAE, UK,
+   South Sudan, Chad, Nepal, India
+
+   * Show flags or map
+   * Text: "Exporting to 10+ countries"
+
+6. Quality Section
+
+   * WHO-GMP mention
+
+7. Contact CTA
+
+   * “Get in touch with us”
+
+---
+
+6. ABOUT PAGE
+
+---
+
+* Company intro
+* Mission
+* Vision
+* Facility description
+* Image: lab/manufacturing unit
+
+---
+
+7. PRODUCTS PAGE
+
+---
+
+* Categories:
+
+  * Antibiotics
+  * Critical Care
+  * Injections
+
+* Use Product Cards:
+
+  * Product Name
+  * Description
+  * Category
+
+---
+
+8. MANUFACTURING PAGE (MOST IMPORTANT)
+
+---
+
+Sections:
+
+* Intro:
+  "Leading Third-Party Manufacturing Partner"
+
+* Why Choose Us:
+
+  * WHO-GMP facility
+  * Quality assurance
+  * Scalable production
+
+* Process:
+
+  1. Inquiry
+  2. Documentation
+  3. Manufacturing
+  4. Delivery
+
+* CTA:
+  "Partner With Us"
+
+---
+
+9. EXPORTS PAGE
+
+---
+
+* Global presence
+
+* Focus on Africa
+
+* Show country flags
+
+* Text:
+  "Strong export network across Africa, Middle East, and Asia"
+
+---
+
+10. QUALITY PAGE
+
+---
+
+* Certifications:
+
+  * WHO-GMP
+  * Quality standards
+
+* Content:
+
+  * Safety
+  * Compliance
+  * Testing
+
+---
+
+11. BLOG PAGE
+
+---
+
+* Placeholder initially
+* Future: articles, pharma updates
+
+---
+
+12. CONTACT PAGE
+
+---
+
+Fields:
+
+* Name
+* Email
+* Message
+
+Contact Info:
+
+* Email: [sales@protectlifesciences.com](mailto:sales@protectlifesciences.com)
+* Phone numbers (from doc)
+
+Features:
+
+* EmailJS integration
+* Mailto fallback link
+
+---
+
+13. EMAIL SYSTEM (EMAILJS)
+
+---
+
+Flow:
+User → Form → EmailJS → Company Email
+
+Steps:
+
+1. Create EmailJS account
+2. Connect Gmail
+3. Create template
+4. Use public key in React
+
+---
+
+14. STYLING GUIDELINES
+
+---
+
+* Colors:
+
+  * Blue (trust)
+  * White (clean)
+  * Light gray backgrounds
+
+* Design:
+
+  * Minimal
+  * Corporate
+  * Clean spacing
+
+---
+
+15. DEPLOYMENT
+
+---
+
+Frontend:
+
+* Deploy on Vercel
+
+Steps:
+
+1. Push code to GitHub
+2. Connect repo to Vercel
+3. Deploy
+
+Domain Setup (GoDaddy):
+
+1. Go to DNS settings
+2. Add Vercel nameservers or A record
+3. Link domain in Vercel
+
+---
+
+16. FUTURE IMPROVEMENTS
+
+---
+
+* Backend (Node.js + Express)
+* Database (MongoDB)
+* Admin panel
+* Blog CMS
+* SEO optimization
+* Analytics
+
+---
+
+17. FINAL GOAL
+
+---
+
+A professional, responsive, deploy-ready pharmaceutical website that:
+
+* Builds trust
+* Attracts business clients
+* Generates leads
+* Showcases global presence
+
+---
+
+## END OF PLAN
