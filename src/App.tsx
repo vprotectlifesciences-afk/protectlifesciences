@@ -24,6 +24,36 @@ const ScrollToTop = () => {
 };
 
 function App() {
+  const isMaintenanceMode = true; // Set to false to bring the site back online
+
+  if (isMaintenanceMode) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-6 text-center">
+        <img
+          src="/logo.png"
+          alt="Protect Life Sciences"
+          className="h-24 w-auto object-contain brightness-0 invert mb-8"
+        />
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-green-400">Under Maintenance</h1>
+        <p className="text-gray-400 max-w-lg text-lg mb-8 leading-relaxed">
+          We are currently updating our website to bring you an enhanced experience. We will be back online shortly. Thank you for your patience!
+        </p>
+        <div className="flex flex-col items-center gap-4 bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">
+          <p className="text-gray-300">For urgent inquiries, please reach out to us:</p>
+          <a
+            href="https://wa.me/919168304010"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-[#1ebd57] transition font-medium"
+          >
+            <WhatsAppIcon size={24} />
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <BrowserRouter>
       <ScrollToTop />
